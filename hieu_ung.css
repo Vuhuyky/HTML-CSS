@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2160;
+    background: #f4f6fb;
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #303392 0%,
+        #6a70cf 60%,
+        #e31b23 120%
+    );
+    color: white;
+    padding: 40px 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: white;
+    color: #303392;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+}
+
+.profile {
+    width: min(100% - 32px, 720px);
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgb(48 51 146 / 20%);
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .badge {
+        animation: none;
+    }
+
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}

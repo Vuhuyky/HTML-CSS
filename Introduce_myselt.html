@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Giới thiệu bản thân</h1>
+    </header>
+    <nav>
+        <h2>Mục Lục</h2>
+        <ul>
+           <li><a href="#Gioi-thieu">Giới thiệu</a></li>
+           <li><a href="#So-thich">Sở thích</a></li>
+           <li><a href="#Lien-he">Liên hệ</a></li>
+           <li><a href="#Lich-hoc">Lịch học</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Gioi-thieu" class="card">
+            <h2>Giới thiệu bản thân</h2>
+            <img src="images/VKY02139.jpg" alt="Ảnh của Kỳ" width="50" height="70">
+            <p>Xin chào! Tôi là Vũ Huy Kỳ - lập trình viên.</p>
+            <p>Tôi sinh ra và lớn lên ở Hà Nội, Việt Nam.</p>
+            <p>Tôi có kinh nghiệm trong việc xây dựng các ứng dụng web và di động, 
+                cũng như làm việc với nhiều ngôn ngữ lập trình khác nhau.</p>
+            <p>Tôi luôn sẵn sàng học hỏi và phát triển kỹ năng mới.</p>
+            <p>Tôi luôn cố gắng hoàn thành tốt công việc được giao.</p>   
+            <p>Tôi luôn tin tưởng vào khả năng của mình để hoàn thành các mục tiêu đã đặt ra.</p>
+            <p>Tôi luôn tìm kiếm cơ hội để học hỏi và cải thiện kỹ năng của mình.</p>
+            <p>Các bạn thì sao? Hãy để lại bình luận phía bên dưới nhé!</p> 
+        </section>
+
+        <section id="So-thich" class="card">
+            <h2>Sở thích cá nhân</h2>
+            <ul>
+                <li>Chơi Game</li>
+                <li>Chụp ảnh</li>
+                <li>Nghe nhạc</li>
+                <li>Du ngoạn</li>
+                <li>Ngắm cảnh</li>
+            </ul>
+        </section>
+
+        <section id="Lien-he" class="card">
+            <h2>Liên hệ</h2>
+            <form>
+                <label for="full-name">Họ và tên: </label>
+                <input id="full-name" type="text" name="full-name" placeholder="Nhập họ và tên..." required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email..." required><br>
+
+                <label for="course">Khóa học: </label>
+                <select id="course" name="course">
+                    <option value="HTML">Học HTML</Option>
+                    <option value="Css">Học Css</option>
+                    <option value="JS">Học JavaScript</option>
+                    <option value="Photograghy">Học chụp ảnh</option>
+                </select> <br>
+
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="3" cols="30" placeholder="Lời nhắn"></textarea>
+
+                <button type="submit" name="submit">Gửi</button>
+            </form>
+        </section>
+
+        <section id="Lich-hoc" class="card">
+            <h2>Lịch Học</h2>
+            <table border="1">
+                <caption>Lịch Học cá nhân</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Thứ</th>
+                        <th scope="col">Thời gian</th>
+                        <th scope="col">Môn học</th>
+                        <th scope="col">Trạng thái</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>7:30-11:00</td>
+                        <td>Học HTML</td>
+                        <td>
+                            <select name="status-monday">
+                                <option value="not-started">Chưa học</option>
+                                <option value="in-progress">Đang học</option>
+                                <option value="completed">Đã học</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>7:30-11:00</td>
+                        <td>Học CSS</td>
+                        <td>
+                            <select name="status-tuesday">
+                                <option value="not-started">Chưa học</option>
+                                <option value="in-progress">Đang học</option>
+                                <option value="completed">Đã học</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>7:30-11:00</td>
+                        <td>Học JavaScript</td>
+                        <td>
+                            <select name="status-wednesday">
+                                <option value="not-started">Chưa học</option>
+                                <option value="in-progress">Đang học</option>
+                                <option value="completed">Đã học</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 5</td>
+                        <td>7:30-11:00</td>
+                        <td>Học Chụp Ảnh</td>
+                        <td>
+                            <select name="status-thursday">
+                                <option value="not-started">Chưa học</option>
+                                <option value="in-progress">Đang học</option>
+                                <option value="completed">Đã học</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 6</td>
+                        <td>7:30-11:00</td>
+                        <td>Ôn tập HTML/CSS</td>
+                        <td>
+                            <select name="status-friday">
+                                <option value="not-started">Chưa học</option>
+                                <option value="in-progress">Đang học</option>
+                                <option value="completed">Đã học</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+        <p>Email: example@example.com</p>
+    </footer>
+</body>
+</html>
